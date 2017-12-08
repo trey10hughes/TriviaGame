@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia!</title>
+
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+</head>
+<body>
+
+  <!-- Overall Bootstrap Grid -->
+  <div class="container">
+
+    <!-- Jumbotron with Title -->
+    <div class="jumbotron" id='characterSelectScreen'>
+      <h1 class="text-center" id='jumboh1'><strong>Javascript Trivia</strong></h1>
+      <button type="button" class="btn btn-default center-block" id="getStarted">Start Quiz</button>
+      <h4 class="text-center" id="timer"></h4>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12" id="quiz">
+        <!-- put quiz elements that were dynamically created in here -->
+        <div id="questionContainer">
+
+        <div class="text-center" id="question">question????</div>
+        <div class="radio text-center">
+          <label><input type="radio" name="optradio">Option 1</label>
+        </div>
+        <div class="radio text-center">
+          <label><input type="radio" name="optradio">Option 2</label>
+        </div>
+        <div class="radio text-center">
+          <label><input type="radio" name="optradio">Option 3</label>
+        </div>
+        <div class="radio text-center">
+          <label><input type="radio" name="optradio">Option 4</label>
+        </div>
+
+        </div>
+      </div> <!-- end of quiz div -->
+    </div>
+
+
+  </div>
+
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
