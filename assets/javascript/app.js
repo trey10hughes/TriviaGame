@@ -145,7 +145,8 @@ function startgame() {
 function finishQuiz() {
 for (var i = 0; i < quizQuestions.length; i++) {
 	var answerChoice;
-	answerChoice = $("input[name='" + i + "']:checked").data('answer'); // can't figure out why this isn't grabbing the data value I have set for 
+	answerChoice = $("input[name='" + i + "']:checked").attr("data-answer");
+	//can't figure out why this isn't grabbing the value of the "data-answer" I set while dynamically creating the question elements.
 
 	if (answerChoice === quizQuestions[i].correctAnswer){
 		score += 10;
